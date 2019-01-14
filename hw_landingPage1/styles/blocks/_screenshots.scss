@@ -1,0 +1,46 @@
+@import "../mixin";
+
+.screenshots {
+
+  &__part {
+
+    &_left {
+
+    }
+
+    &_right {
+
+    }
+  }
+
+  &__heading {
+    @extend %headings;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  &__itemImg {
+    width: 202px;
+    height: 152px;
+    margin-right: 14px;
+    background-color: #445161;
+  }
+
+  &__itemHeading {
+    margin: 0 0 15px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__itemDesc {
+    @extend %text1;
+    width: 360px;
+  }
+
+}

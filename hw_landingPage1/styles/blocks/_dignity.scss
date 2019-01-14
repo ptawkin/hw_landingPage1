@@ -1,0 +1,38 @@
+@import "../mixin";
+
+.dignity {
+
+  &__part {
+
+    &_left {
+
+    }
+
+    &_right {
+
+    }
+  }
+
+  &__heading {
+    @extend %headings;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__item {
+    @extend %text1;
+    position: relative;
+    width: 526px;
+    margin: 0 0 35px 42px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -42px;
+      width: 34px;
+      height: 34px;
+      background-image: url("../images/plus_icon.gif");
+    }
+  }
+}

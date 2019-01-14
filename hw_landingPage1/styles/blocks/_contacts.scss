@@ -1,0 +1,148 @@
+//@import "../../fonts/Socialico.ttf";
+@import "../mixin";
+
+.contacts {
+
+  &__heading {
+    @extend %headings;
+    width: 100%;
+    //text-align: center;
+  }
+
+  &__part {
+
+    &_left {
+      width: 502px;
+      margin-right: 44px;
+    }
+
+    &_right {
+      color: #ffffff;
+    }
+  }
+
+  &__form {
+  }
+
+  &__inputName,
+  &__inputEmail,
+  &__inputMessage {
+    width: 502px;
+    padding: 15px 11px;
+    color: #445162;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+  }
+
+  &__inputName,
+  &__inputEmail,
+  &__inputMessage,
+  &__submit {
+    display: block;
+    border-radius: 5px;
+  }
+
+  &__inputName {
+    margin-bottom: 19px;
+  }
+
+  &__inputEmail {
+    margin-bottom: 20px;
+  }
+
+  &__inputMessage {
+    height: 172px;
+    margin-bottom: 19px;
+    vertical-align: top;
+  }
+
+  &__submit {
+    width: 142px;
+    height: 42px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #445162;
+    font-size: 16px;
+    line-height: 42px;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #44516285;
+    }
+
+    &:active {
+      font-size: 14px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin-left: 30px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 18px;
+
+    &_skype,
+    &_icq,
+    &_email,
+    &_tel {
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -28px;
+      }
+    }
+
+    &_skype {
+
+      &:before {
+        width: 24px;
+        height: 26px;
+        background-image: url('../images/skype_icon.png');
+      }
+    }
+
+    &_icq {
+
+      &:before {
+
+        width: 26px;
+        height: 26px;
+        background-image: url('../images/icq_icon.png');
+      }
+    }
+
+    &_email {
+
+      &:before {
+        top: 2px;
+        width: 22px;
+        height: 22px;
+        background-image: url('../images/email_icon.png');
+      }
+    }
+
+    &_tel {
+      margin-bottom: 32px;
+
+      &:before {
+        width: 24px;
+        height: 23px;
+        background-image: url('../images/phone_icon.png');
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+    font-family: SocialIco, sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 44px;
+  }
+}

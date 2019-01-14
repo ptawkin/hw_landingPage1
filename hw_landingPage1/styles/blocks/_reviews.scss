@@ -1,0 +1,72 @@
+@import "../mixin";
+
+.reviews {
+
+  &__part {
+
+    &_left {
+
+    }
+
+    &_right {
+
+    }
+  }
+
+  &__heading {
+    @extend %headings;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  &__img {
+    width: 77px;
+    height: 77px;
+    margin-right: 18px;
+    background-color: #445161;
+    border-radius: 38px;
+  }
+
+  &__review {
+    position: relative;
+    width: 450px;
+    font-size: 14px;
+    margin-bottom: 24px;
+    padding: 16px 20px;
+    line-height: 18px;
+    background-color: #ebebeb;
+    box-sizing: border-box;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: -5px;
+      width: 10px;
+      height: 10px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      background-color: #ebebeb;
+    }
+
+    &_text {
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+
+    &_name {
+      color: #989898;
+    }
+  }
+
+
+}

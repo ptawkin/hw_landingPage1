@@ -1,0 +1,33 @@
+@import "../mixin";
+
+.aboutProduct {
+
+  &__part {
+
+    &_left {
+      width: 650px;
+    }
+
+    &_right {
+      width: 432px;
+    }
+  }
+
+  &__heading {
+    @extend %headings;
+  }
+
+  &__desc {
+    @extend %text1;
+  }
+
+  &__descItem {
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    width: 432px;
+    height: 247px;
+    background-color: #445161;
+  }
+}

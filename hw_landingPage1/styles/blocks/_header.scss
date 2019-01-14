@@ -1,0 +1,49 @@
+.header {
+  background-color: #445161;
+  color: #ffffff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+
+  &__heading {
+    margin: 0 0 50px;
+    font-size: 60px;
+    line-height: 44px;
+  }
+
+  &__part {
+
+    &_left {}
+
+    &_right {}
+  }
+
+  &__desc {
+    font-size: 20px;
+    line-height: 36px;
+    padding: 0;
+  }
+
+  &__descItem {
+    position: relative;
+    margin-left: 36px;
+    list-style-type: none;
+    line-height: 36px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -36px;
+      width: 25px;
+      height: 19px;
+      background-image: url("../images/check_icon.png");
+    }
+  }
+
+
+
+  &__logo {
+    width: 471px;
+    height: 216px;
+    background-color: #ffffff;
+  }
+}
